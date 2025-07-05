@@ -9,7 +9,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "360° Quick Scoops",
+  title: "360 Quick Scoops",
   description: "Premium ice cream delivered right to your door",
 };
 
