@@ -20,7 +20,7 @@ const products = [
     price: 11.99,
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAGMV0j3BrsoINF88bOeqWEFkESN8G4xG4K24B1-rSW2OHiJ6qE7dHq8ixNR0_TSh4BUtOtKfbHrbv9mH0-QafZu-BQMwcQJPWOFlCyB72FfTnqWJQpZ_AMPQ-gdYyAu38OHQzYOPSk7t-LUTKfo6v9hBM99CT6BmvG7zihgnMzJ7VB3RkfayKbCCLliCp3HdZmiKeXa80ur-XesPRf3o7D3GdfbRd7_P7_UN5n75LIZla46e0O7ss1mD8nRX37aM9J8QMGMQCO9Blg",
     description: "Creamy vanilla with mini egg pieces",
-    category: "Vanilla"
+    category: "Specialty"
   },
   {
     id: 3,
@@ -52,8 +52,32 @@ const products = [
     price: 12.99,
     image: "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=300&h=200&fit=crop",
     description: "Refreshing mint ice cream with chocolate chips",
-    category: "Mint"
-  }
+    category: "Chocolate"
+  },
+  {
+    id: 7,
+    name: "Blueberry",
+    price: 9.99,
+    image: "https://tse3.mm.bing.net/th/id/OIP._aRC36QRetd-mlFWINkacQHaHa?pid=Api", // e.g. turn0image8 link
+    description: "Creamy vanilla ice cream swirled with sweet blueberry compote made with fresh blueberries.",
+    category: "Fruit"
+},
+{
+    id: 8,
+    name: "Maple Walnut",
+    price: 13.99,
+    image: "https://tse1.mm.bing.net/th/id/OIP.bFeatKdrlf1PrNxU4ORWSQHaLH?r=0&pid=Api", // e.g. turn0image9 link
+    description: "Custard-style maple ice cream made with pure maple syrup and rich cream, folded with toasted walnut pieces.",
+    category: "Classic"
+},
+{
+    id: 9,
+    name: "Moose Trail",
+    price: 12.99,
+    image: "https://tse4.mm.bing.net/th/id/OIP.BscDrXLslyDtDAqIKYnz8AHaLH?r=0&pid=Api", // e.g. turn0image10 link
+    description: "Smooth vanilla ice cream mixed with chocolate peanut‑butter cups and fudge swirls.",
+    category: "Specialty"
+}
 ];
 
 // Get unique categories for filter dropdown
@@ -157,9 +181,9 @@ export default function Products() {
               onChange={e => setSelectedCategory(e.target.value)}
               className="w-full px-4 py-2 border border-pink-300 rounded focus:outline-none focus:ring-2 focus:ring-pink-400"
             >
-              <option value="">All</option>
+              <option value="" className="text-black">All</option>
               {categories.map(cat => (
-                <option key={cat} value={cat}>{cat}</option>
+                <option key={cat} value={cat} className='text-black'>{cat}</option>
               ))}
             </select>
           </div>

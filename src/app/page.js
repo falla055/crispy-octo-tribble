@@ -118,7 +118,7 @@ export default function Home() {
           <h2 className="text-sm font-semibold text-pink-600">360 QUICK SCOOPS</h2>
           <h3 className="text-4xl font-bold text-white mt-2 mb-4">OUR MISSION</h3>
           <p className="text-lg-600 max-w-3xl mx-auto">
-            We pride ourselves in using top quality ingredients to ensure that you experience the same flavourful, creamy experience with every scoop. 360 Quick Scoops aims to take a twist on your traditional ice cream by filling your pint with either our classic flavors, or our weekly specials.
+            At 360 Quick Scoops, our mission is to bring premium ice cream directly to your doorstep, making it easier than ever to indulge in your favorite treats. Whether you’re craving one of our timeless classics or looking to try something new from specialty options, we’re here to deliver a delightful dessert experience right to you. No lines, no hassle, just pure ice cream joy.
           </p>
         </section>
       </main>
